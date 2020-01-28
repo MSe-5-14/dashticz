@@ -175,6 +175,25 @@ De lijn
 
 The station code consists of 6 digits. Search for your station code in the search box on https://delijn.be 
 
+.. _Mobiliteitsection :
+
+Mobiliteit
+----
+
+First find the correct name for the stop/station here: http://travelplanner.mobiliteit.lu/hafas/query.exe/dot?performLocating=2&tpl=stop2csv&look_maxdist=150000&look_x=6112550&look_y=49610700&stationProxy=yes 
+Example::
+
+    var publictransport = {}
+    publictransport.busstop = {  
+      provider: 'mobiliteit',
+      station: 'Aéroport Luxembourg/Findel', 
+      title:'Airport Bus Stop', 
+      icon: 'fas fa-bus',
+      show_lastupdate: true, 
+      width: 12, 
+      results: 5
+    };
+
 .. _predefpubtrans :
 
 Predefined public transport blocks
